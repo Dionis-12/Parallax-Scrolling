@@ -1,0 +1,117 @@
+
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	color: #fff;
+	font-family: "Luna";
+	height: 100%;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+}
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+}
+
+header h1 {
+	margin-top: -100px;
+}
+
+header header:before {
+	background: 50% 50% / cover;
+}
+
+header::before {
+	background: url(../image/img.jpg);
+	background-size: cover;
+	bottom: 0;
+	content: '';
+	display: block;
+	left: 0;
+	min-height: 100vh;
+	position: absolute;
+	right: 0;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	top: 0;
+	z-index: -1;
+}
+
+header * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	margin: 0;
+	padding: 1px 0;
+	text-align: center;
+}
+
+.container {
+	background: #043231;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	height: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 20px;
+	position: absolute;
+	width: 100%;
+}
+
+.container .content {
+	color: #fff;
+	display: block;
+	left: 15%;
+	margin-top: 10px;
+	padding: 30px;
+	position: absolute;
+	width: 60%;
+}
+
+.content p {
+	font-size: 14px;
+	margin: 20px;
+}
+
+
+@media (max-width: 320px) {
+	.container {
+		background: #043231;
+		display: flex;
+		font-family: 'Poppins', sans-serif;
+		height: 100%;
+		min-height: 135vh;
+		margin: 0;
+		padding: 10px;
+		position: absolute;
+		width: 100%;
+	}
+
+	.container .content {
+		color: #fff;
+		display: block;
+		left: 12%;
+		margin-top: 10px;
+		padding: 20px;
+		position: absolute;
+		width: 60%;
+	}
+
+	.content p {
+		font-size: 14px;
+		margin: 8px;
+	}
+
+}
